@@ -1,0 +1,47 @@
+\documentclass{report}
+
+% cSpell:disable
+
+\input{preamble.tex}
+
+% Add this line to your preamble, replace "references.bib" with the name of your .bib file
+\addbibresource{references.bib}
+
+\begin{document}
+
+\input{TexFiles/frontpage.tex} % Insert frontpage file.
+
+\pagenumbering{gobble} % Turn off page numbering
+\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}} % Temporarily disable TOC entries
+\input{TexFiles/chapter_01.tex}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{4}} % Re-enable TOC entries
+\begingroup
+    \pagestyle{empty} % No headers or footers for the TOC page
+    \tableofcontents
+\endgroup
+\clearpage % ends the page, to ensure page numbering starts on the next page where the main text begins
+
+\pagestyle{fancy}
+\fancyfoot{} % Clear footer
+\fancyhead[R]{\sffamily\thepage} % Set page number in header
+\fancyhead[L]{{\bfseries\sffamily Chapter \thechapter \, |} \quad {\transparent{0.6}\sffamily\rightmark}} % Set chapter name in header
+
+\pagenumbering{arabic} % Turn on page numbering
+
+\setcounter{chapter}{1} % Set chapter number to 1
+\renewcommand{\thesection}{\arabic{section}} % Customize section numbering to be just "1", "2", etc.
+% Start the main content of the document
+\input{TexFiles/chapter_02.tex}
+%\input{TexFiles/chapter_03.tex}
+%\input{TexFiles/chapter_04.tex}
+%\input{TexFiles/chapter_05.tex}
+%\input{TexFiles/chapter_06.tex}
+
+\newpage
+\printbibliography[heading=bibsection]
+
+%\begin{appendices}
+%    \input{TexFiles/appendix.tex}
+%\end{appendices}
+
+\end{document}

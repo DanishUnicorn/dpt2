@@ -1,0 +1,31 @@
+# Ignore LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.run.xml
+*.synctex.gz
+
+# Ignore generated PDF and other big output files
+*.pdf
+*.dvi
+*.ps
+
+# main build products that include spaces or numbered suffixes
+main*.log
+main*.fls
+main*.aux
+
+# Editor and OS files
+*.swp
+Thumbs.db
+.DS_Store
+
+# Python cache
+__pycache__/
