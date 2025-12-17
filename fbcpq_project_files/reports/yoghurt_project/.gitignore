@@ -13,7 +13,6 @@
 *.synctex.gz
 
 # Ignore generated PDF and other big output files
-*.pdf
 *.dvi
 *.ps
 
