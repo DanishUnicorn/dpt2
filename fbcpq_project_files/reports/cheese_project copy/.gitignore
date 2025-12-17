@@ -1,6 +1,7 @@
 # Ignore LaTeX build artifacts
 *.aux
 *.bbl
+*.bbl-SAVE-ERROR
 *.blg
 *.brf
 *.fls
