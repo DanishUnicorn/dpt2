@@ -66,8 +66,8 @@ vmargin = {30mm, 30mm} % Top and bottom margin
 
 % FONT STUFF ----------------------------------------
 \usepackage{setspace} % For line spacing
-\onehalfspacing % Set line spacing to 1.5
-%\singlespacing % Set line spacing to single
+%\onehalfspacing % Set line spacing to 1.5
+\singlespacing % Set line spacing to single
 
 \usepackage{mathptmx} % Use Times New Roman font
 \usepackage[T1]{fontenc} % For font encoding
@@ -133,12 +133,7 @@ vmargin = {30mm, 30mm} % Top and bottom margin
 \newcommand{\na}{\cellcolor{gray!15}{\textemdash}}
 
 % REFERENCING AND CITING ---------------------------------------
-\usepackage[
-    style=numeric,
-    sorting=none,
-    maxcitenames=1,
-    mincitenames=1
-]{biblatex} % Numeric citations, ordered by citation, use "et al." for >1 author
+\usepackage[sorting=none]{biblatex} % Add sorting=none to order by citation
 \usepackage{hyperref} % Hyperrefs in TOC, cites, refs etc.
 \usepackage{pdfpages} % For including pdfs in the appendix
 \usepackage{url} % For including urls in the .bib file (if needed for slides)
