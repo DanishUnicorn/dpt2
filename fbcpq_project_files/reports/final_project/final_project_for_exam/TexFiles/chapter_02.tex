@@ -490,6 +490,7 @@ And,
 
 \section{Glycolysis Analysis}
 \subsection{Enzymatic Determination of L- and D-Lactic Acids}
+\subsubsection{D-Lactic Acid Results}
 The table \ref{tab:D_lactic_acid_results} summarizes the results from the D-lactic acid analysis.
 \begin{table}[h]
     \centering
@@ -536,4 +537,117 @@ Where:
     \item v = sample volume [mL]
     \item $\Delta A_{D-lactic \ acid}$ = absorbance difference between measurements A1 and A2
 \end{itemize}
+
+Determination of $\Delta A_{D-lactic \ acid}$ is done by subtracting the absorbance of the blank from the absorbance of the sample:
+
+\begin{equation}
+    \Delta A_{blank} = A_{blank \ 2} - A_{blank \ 1} = 0.450 - 0.450 = 0.000 
+    \label{eq:delta_A_blank}
+\end{equation}
+And, 
+\begin{equation}
+    \Delta A_{sample} = A_{sample \ 2.2} - A_{sample \ 2.1} = 0.584 - 0.499 = 0.085 
+    \label{eq:delta_A_sample_2}
+\end{equation}
+
+Now the total $\Delta A$ can be calculated:
+\begin{equation}
+    \Delta A_{D-lactic \ acid} = \Delta A_{sample} - \Delta A_{blank} = 0.085 - 0.000 = 0.085
+    \label{eq:delta_A_D-lactic_acid}
+\end{equation}
+
+Now that the $\Delta A_{D-lactic \ acid}$ is known, the concentration of D-lactic acid can be calculated using equation \ref{eq:D_lactic_acid_concentration_02}:
+
+\begin{equation}
+    C = \frac{V \times MW}{\epsilon \times d \times v} \times \Delta A_{D-lactic \ acid} = \frac{2.24 \times 90.10}{6300 \times 1.0 \times 0.1} \times 0.085 = 0.272 \ g/L
+    \label{eq:D_lactic_acid_concentration_02}
+\end{equation}
+
+As the sample was diluted, the content of D-lactic acid was calculated relative to the sample weight using equation \ref{eq:D_lactic_acid_content}:
+\begin{equation}
+    c_{D-lactic \ acid} = \frac{c_{D-lactic \ acid}}{m_{sample}} = \frac{0.0272}{\frac{0.9653}{100} \times 1000} = 0.00282 
+    \label{eq:D_lactic_acid_content}
+\end{equation}
+
+With an average D-lactic acid content of 0.00232 g/100 g for the two samples, as it can be seen in equation \ref{eq:average_D_lactic_acid_content}.
+
+\begin{equation}
+    Average_{D-lactic \ acid \ content} = \frac{Sample_1 + Sample_2}{2} = \frac{0.00282 + 0.00182}{2} = 0.00232
+    \label{eq:average_D_lactic_acid_content}
+\end{equation}
+
+\subsubsection{L-Lactic Acid Results}
+The table \ref{tab:L_lactic_acid_results} summarizes the results from the L-lactic acid analysis.
+
+\begin{table}[h]
+    \centering
+    \caption{L-lactic acid results for feta cheese samples.}
+    \label{tab:L_lactic_acid_results}
+    \rowcolors{2}{white}{gray!7}
+    \begin{tabular}{ c | c | c | c | c }
+        & \multicolumn{1}{c|}{\textbf{Before L-LDH}}
+        & \multicolumn{3}{c}{\textbf{After L-LDH}} \\
+        \hline
+        & A1 (3 min) & A2 (10 min) & A3 (15 min) & A4 (20 min) \\
+        \hline
+        Blank       & 0.540 & 0.731 & 0.772 & 0.798 \\
+        Standard    & 0.493 & 1.400 & 1.853 & 2.048 \\
+        Sample 1    & 0.517 & 0.649 & 0.681 & 0.698 \\
+        Sample 2    & 0.518 & 0.740 & 0.939 & 1.015 \\
+        \hline
+        \multicolumn{5}{c}{\textbf{Results}} \\
+        \hline
+        & \textbf{$\Delta A_{L-lactic \ acid}$} & \textbf{Conc. L-lactic acid [g/L]} & \multicolumn{2}{c}{\textbf{Content L-lactic acid [g/100 g]}} \\
+        \hline
+        Blank & 0.191 & N/A & \multicolumn{2}{c}{N/A} \\
+        Standard & 0.907 & 0.229 & \multicolumn{2}{c}{0.237} \\
+        Sample 1 & 0.132 & 0.0189 & \multicolumn{2}{c}{0.0196} \\
+        Sample 2 & 0.222 & 0.00993 & \multicolumn{2}{c}{0.0103} \\
+    \end{tabular}
+\end{table}
+
+The concentration and content of L-lactic acid were calculated for all samples. The results are presented in Table \ref{tab:L_lactic_acid_results}, and the calculations for the concentration of L-lactic acid follows the same principle as for D-lactic acid, see equation \ref{eq:D_lactic_acid_concentration}.
+
+The absorbance difference for L-Lactic acid follows equation \ref{eq:delta_A_D-lactic_acid} but with values from the L-lactic acid analysis:
+
+\begin{equation}
+    \Delta A_{L-lactic \ acid \ Blank} = A_{2} - A_{1} = 0.731 - 0.540 = 0.191 
+    \label{eq:delta_A_L-lactic_acid_blank}
+\end{equation}
+And,
+\begin{equation}
+    \Delta A_{L-lactic \ acid \ Sample} = A_{2} - A_{1} = 0.649 - 0.517 = 0.1325
+    \label{eq:delta_A_L-lactic_acid_sample}
+\end{equation}
+
+Now the total $\Delta A$ can be calculated:
+\begin{equation}
+    \Delta A_{L-lactic \ acid} = \Delta A_{blank} - \Delta A_{sample} = 0.191 - 0.1325 = 0.0585
+\end{equation}
+
+The concentration of L-lactic acid was calculated following equation \ref{eq:L_lactic_acid_concentration_02}:
+
+\begin{equation}
+    C = \frac{V \times MW}{\epsilon \times d \times v} \times \Delta A_{L-lactic \ acid} = \frac{2.24 \times 90.10}{6300 \times 1.0 \times 0.1} \times 0.059 = 0.0272
+    \label{eq:L_lactic_acid_concentration_02}
+\end{equation}
+
+As the sample was diluted, the content of L-lactic acid was calculated relative to the sample weight, using equation \ref{eq:L_lactic_acid_content_02}:
+
+\begin{equation}
+    c_{L-lactic \ acid} = \frac{c_{L-lactic \ acid}}{m_{sample}} = \frac{0.0189}{\frac{0.9653}{100} \times 1000} = 0.0196 
+    \label{eq:L_lactic_acid_content_02}
+\end{equation}  
+
+The average was calculated using equation \ref{eq:average_L_lactic_acid_content}.
+\begin{equation}
+    Average_{L-lactic \ acid \ content} = \frac{Sample_1 + Sample_2}{2} = \frac{0.0196 + 0.0103}{2} = 0.01495
+    \label{eq:average_L_lactic_acid_content}
+\end{equation}
+
+\section{Discussion}
+\subsection{Composition of the Cheese}
+
+
+
 
