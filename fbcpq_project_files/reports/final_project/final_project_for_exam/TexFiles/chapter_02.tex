@@ -52,7 +52,7 @@ The nutritional information provided on the packaging is shown below and will be
 
 \begin{table}[h]
     \centering
-    \caption{Nutritional information of Änglamark feta cheese per 100 g.}
+    \caption{Nutritional information of Änglamark feta cheese per 100 g. Data was obtained from the product's webpage \cite{web_feta_composition_2026}.}
     \label{tab:feta_nutrition}
     \rowcolors{2}{white}{gray!7}
     \begin{tabular}{ c | c  }
@@ -135,7 +135,6 @@ For the enzymatic determination of L- and D-lactic acid, 1 g of feta was transfe
 Details regarding the equipment, materials, and methods used are provided in the Manual for Chemical Analysis of Cheese (Hougaard and Danielsen, 2025) 
 
 
-\newpage
 \section{Results and Calculations}
 \label{sec:results_and_calculations}
 \subsection{Compositional Analysis Results}
@@ -334,6 +333,32 @@ The difference between the duplicates was calculated as seen in equation \ref{eq
 
 \vspace{1em}
 The salt content of the feta cheese samples was measured as 3.00\% and 2.95\%. The difference between duplicate measurements (0.05\%) is below the maximum allowed difference of 0.06\% specified in the laboratory manual and is therefore considered accurate and reliable.
+
+\vspace{1em}
+To calculate the salt in moisture, the following formula was used in equation \ref{eq:salt_in_moisture}:
+
+\begin{equation}
+    \text{Salt in moisture [\%]} = \frac{\text{Salt [\%]}}{\text{Moisture [\%]}} \times 100
+    \label{eq:salt_in_moisture}
+\end{equation}
+
+The calculations for the two samples are shown in equations \ref{eq:salt_in_moisture_01} and \ref{eq:salt_in_moisture_02}:
+
+\begin{equation}
+    \text{Sample 1: Salt in moisture}_1 = \frac{3.00}{55.51} \times 100 = 5.40 \%
+    \label{eq:salt_in_moisture_01}
+\end{equation}
+And,
+\begin{equation}
+    \text{Sample 2: Salt in moisture}_2 = \frac{2.95}{34.02} \times 100 = 8.67 \%
+    \label{eq:salt_in_moisture_02}
+\end{equation}
+
+Lastly, the average salt in moisture was calculated using equation \ref{eq:salt_in_moisture_avg}:
+\begin{equation}
+    \text{Average Salt in moisture [\%]} = \frac{\text{Salt in moisture}_1 + \text{Salt in moisture}_2}{2} = \frac{5.40 + 8.67}{2} = 7.04 \%
+    \label{eq:salt_in_moisture_avg}
+\end{equation}
 
 
 \subsection{pH in Cheese}
@@ -778,7 +803,7 @@ The average was calculated using equation \ref{eq:average_L_lactic_acid_content}
 \subsubsection{Total Solids/Moisture and Composition}
 \label{subsubsec:total_solids/moisture_and_composition}
 
-First, we will look at the total solids/moisture and the composition of feta cheese. We calculated the moisture to be around 55\% and 34\%, after we found the total solids from the two samples. Compared to literature , we would expect a moisture percentage between 45 and 60. Therefore we think that something went wrong in the second sample, since it so far from the first sample. And as mentioned we should have made a new sample as our duplicates exceeded the 0.20\% maximum described in the laboratory manual. But we accept the first sample as usable.
+First, we will look at the total solids/moisture and the composition of feta cheese. We calculated the moisture to be around 55\% and 34\%, after we found the total solids from the two samples. Compared to literature \cite{n_a01_compositional_characteristics_feta_2021}, we would expect a moisture percentage between 45 and 60. Therefore we think that something went wrong in the second sample, since it so far from the first sample. And as mentioned we should have made a new sample as our duplicates exceeded the 0.20\% maximum described in the laboratory manual. But we accept the first sample as usable.
 
 \vspace{1em}
 As mentioned in the introduction we would expect a content of 23\% fat, 17\% protein, and 2.2\% salt. The Gerber method gave us an average fat content of 23.25\%. Which is considered close enough to be accepted. For the protein content we used the DUMAS, which gave us an average protein content of 15.21\%. A bit off, compared to the fat content, but still in an acceptable range. The salt content shows a bigger deviation between the declared amount and what we measured. We would expect a salt content around 2.2\%, but measured an average content of 2.975\%, which is a bit higher than expected.  
@@ -806,21 +831,21 @@ So overall, we find the results we got for total solids and composition acceptab
 
 \subsubsection{pH}
 \label{subsubsec:pH_discussion}
-Feta cheese typically has a pH of 4.4–4.6 . Our measurements gave pH 4.28 and 4.27, which is a bit lower, but we consider it acceptable. Another possibility could be that the pH-meter was not calibrated correctly, as it was already sat up for the lab. We could except a smaller variability here, since we used to pack feta, so parameters such as starter culture, fermentation, brining and storage could have an impact on our measurements compared to the values from literature.
+Feta cheese typically has a pH of 4.4-4.6 \cite{n_a01_compositional_characteristics_feta_2021}. Our measurements gave pH 4.28 and 4.27, which is a bit lower, but we consider it acceptable. Another possibility could be that the pH-meter was not calibrated correctly, as it was already sat up for the lab. We could except a smaller variability here, since we used to pack feta, so parameters such as starter culture, fermentation, brining and storage could have an impact on our measurements compared to the values from literature.
 
 \subsubsection{Ash Content}
 \label{subsubsec:ash_content_discussion}
-Ash content is a great indicator for minerals such as Calcium, Magnesium and Sodium. From other results reported in literature, we found that the ash content should be somewhere between 4.10 to 4.60. For our first sample we had a content of around 3.37\% and for the second sample we had 3.28\%. So we are a bit lower than what we expected. 
+Ash content is a great indicator for minerals such as Calcium, Magnesium and Sodium. From other results reported in literature, we found that the ash content should be somewhere between 4.10 to 4.60 \cite{n_a02_non-starter_lactic_acid_bacteria_2025}. For our first sample we had a content of around 3.37\% and for the second sample we had 3.28\%. So we are a bit lower than what we expected. 
 
 \subsection{Proteolysis Assessment}
 \label{subsec:proteolysis_assessment_discussion}
 Proteolysis is a key biochemical process during cheese ripening. The degree of proteolysis in cheese is strongly dependent on milk composition, the type and activity of proteolytic enzymes present, and processing factors such as salt content and ripening conditions. The feta cheese analysed in this exercise was matured and stored in brine, resulting in a high NaCl concentration, which is known to inhibit enzymatic activity and microbial growth. The proteolysis potential in brined cheeses, such as feta, is generally less expressed than in hard, long-ripened cheeses, i.e. parmesan, where lower salt-in-moisture ratios and prolonged ripening favour protein degradation.
 
 \vspace{1em}
-The proteolytic development was evaluated using the ratio between pH 4.6–soluble nitrogen (pH 4.6–SN) and total nitrogen. At pH 4.6, intact caseins precipitate while smaller peptides remain soluble. Therefore, a low ratio reflects limited secondary proteolysis, whereas a high ratio indicates extensive degradation of caseins. The low pH 4.6–SN to total nitrogen ratio observed for the analysed feta cheese is consistent with the cheeses production and ripening conditions.
+The proteolytic development was evaluated using the ratio between pH 4.6-soluble nitrogen (pH 4.6-SN) and total nitrogen. At pH 4.6, intact caseins precipitate while smaller peptides remain soluble. Therefore, a low ratio reflects limited secondary proteolysis, whereas a high ratio indicates extensive degradation of caseins. The low pH 4.6-SN to total nitrogen ratio observed for the analysed feta cheese is consistent with the cheeses production and ripening conditions.
 
 \vspace{1em}
-The nitrogen fractionation further supported this interpretation. The low pH 4.6–SN relative to total nitrogen indicates that most nitrogen remains associated with intact or weakly degraded caseins. Formol-titratable nitrogen was low (0.032–0.034\%), indicating a limited accumulation of free amino acids. Ammonium nitrogen was also low, suggesting that deamination was low and extensive proteolysis. As a result, the SN-fraction is dominated by peptide nitrogen.
+The nitrogen fractionation further supported this interpretation. The low pH 4.6-SN relative to total nitrogen indicates that most nitrogen remains associated with intact or weakly degraded caseins. Formol-titratable nitrogen was low (0.032-0.034\%), indicating a limited accumulation of free amino acids. Ammonium nitrogen was also low, suggesting that deamination was low and extensive proteolysis. As a result, the SN-fraction is dominated by peptide nitrogen.
 
 
 \subsection{Lipolysis}
@@ -828,7 +853,7 @@ The nitrogen fractionation further supported this interpretation. The low pH 4.6
 In this report, the fat acidity of feta cheese was determined by measuring the content of free fatty acids (FFA) through titrtation. The concentration provides an indication of amount of lipolysis, as FFAs are released through the enzymatic degradation of triglycerides in the cheese fat.
 
 \vspace{1em}
-As presented in subsection \ref{subsec:acidity_of_fat_in_cheese}, the degree of acidity was determined to be 3.94\% and 4.59\% for the duplicate samples, indicating a relatively high level of lipolysis in the analysed feta cheese. In comparison, similar studies have reported fat acidity values ranging between 0.51\% and 2.07\% in white cheeses stored in brine,  suggesting that the values obtained in this experiment are high.
+As presented in subsection \ref{subsec:acidity_of_fat_in_cheese}, the degree of acidity was determined to be 3.94\% and 4.59\% for the duplicate samples, indicating a relatively high level of lipolysis in the analysed feta cheese. In comparison, similar studies have reported fat acidity values ranging between 0.51\% and 2.07\% in white cheeses stored in brine,  suggesting that the values obtained in this experiment are high \cite{s_a01_influence_starters_2005}.
 
 \vspace{1em}
 The observed difference between the duplicate measurements may indicate experimental errors, particularly related to sample handling during the experiment. Determination of FFA involved several handling and transfer steps, and incomplete phase separation during fat extraction could have resulted in partial fat loss. Such losses would typically lead to an underestimation of fat acidity in one or both samples. However, given the relatively high acidity values presented in subsection \ref{subsec:acidity_of_fat_in_cheese}, this is not considered to be the primary cause of the high values.
@@ -844,16 +869,16 @@ Finally, the titration endpoint was determined by visual observation of a colour
 Lactic acid is formed under fermentation of lactose by lactic acid bacteria (LAB) typically added as starter cultures for feta production. Lactose is metabolised through glycolysis, where glucose is converted into pyruvate. Pyruvate is then reduced to lactic acid to regenerate $NAD^+$ allowing glycolysis to continue for multiple cycles. 
 
 \vspace{1em}
-Lactic acid exists as two stereoisomers, L-lactic acid and D-lactic acid, and the proportion of each depends on the type of lactate dehydrogenase (LDH) present in the LAB. LAB containing L-lactate dehydrogenase (L-LDH) produce L-lactic acid, whereas LAB containing D-lactate dehydrogenase (D-LDH) produce D-lactic acid. Some LAB species have both enzymes and may therefore produce both isomers of lactic acid.  
+Lactic acid exists as two stereoisomers, L-lactic acid and D-lactic acid, and the proportion of each depends on the type of lactate dehydrogenase (LDH) present in the LAB. LAB containing L-lactate dehydrogenase (L-LDH) produce L-lactic acid, whereas LAB containing D-lactate dehydrogenase (D-LDH) produce D-lactic acid. Some LAB species have both enzymes and may therefore produce both isomers of lactic acid \cite{s_a02_regulation_mechanisms_l-lactic_2025}.  
 
 \vspace{1em}
-As described in the introduction of this report, \textit{S. thermophilus} and \textit{L. delbrueckii} are commonly used in the production of feta cheese. \textit{S. thermophilus} primarily produces the L-isomer of lactic acid, while \textit{L. delbrueckii} mainly produces the D-isomer.  
+As described in the introduction of this report, \textit{S. thermophilus} and \textit{L. delbrueckii} are commonly used in the production of feta cheese. \textit{S. thermophilus} primarily produces the L-isomer of lactic acid, while \textit{L. delbrueckii} mainly produces the D-isomer \cite{s_web01_introduction_lactic_acid_bacteria_nd, s_a03_cloning_d-lactate_2017}.  
 
 \vspace{1em}
-The contents of both L- and D-lactic acid were analysed in the feta cheese given in this course, and the average concentrations were determined to be 0.0149 and 0.00232, respectively, as presented in subsection \ref{subsec:enzymatic_determination_of_l_and_d_lactic_acids}. The concentration of L-lactic acid were considerably higher than D-lactic acid, which is consistent with expectations for feta cheese and can be explained by differences in the growth behaviour of the used LAB. \textit{S. thermophilus} has a higher growth rate than \textit{L. delbrueckii} and is therefore able to convert a large proportion of the available lactose into lactic acid at an early stage of cheese production . As a fast-growing LAB, \textit{S. thermophilus} dominates the microflora during the initial phase of fermentation, which partly explains the higher concentration of L-lactic acid compared to D-lactic acid.
+The contents of both L- and D-lactic acid were analysed in the feta cheese given in this course, and the average concentrations were determined to be 0.0149 and 0.00232, respectively, as presented in subsection \ref{subsec:enzymatic_determination_of_l_and_d_lactic_acids}. The concentration of L-lactic acid were considerably higher than D-lactic acid, which is consistent with expectations for feta cheese and can be explained by differences in the growth behaviour of the used LAB. \textit{S. thermophilus} has a higher growth rate than \textit{L. delbrueckii} and is therefore able to convert a large proportion of the available lactose into lactic acid at an early stage of cheese production \cite{s_a04_milk_fermentation_monocultures_2022}. As a fast-growing LAB, \textit{S. thermophilus} dominates the microflora during the initial phase of fermentation, which partly explains the higher concentration of L-lactic acid compared to D-lactic acid.
 
 \vspace{1em}
-Additionally, as the pH decreases and salt is added during cheese manufacture, \textit{L. delbruckii} is inhibited more rapidly than \textit{S. thermophilus}.  As a result, the formation of D-lactic acid decreases faster than production of L-lactic acid, further contributing to the observed difference in lactic acid concentrations.
+Additionally, as the pH decreases and salt is added during cheese manufacture, \textit{L. delbruckii} is inhibited more rapidly than \textit{S. thermophilus} \cite{s_a05_prevalence_lactobacillus_bulgaricus_2016}. As a result, the formation of D-lactic acid decreases faster than production of L-lactic acid, further contributing to the observed difference in lactic acid concentrations.
 
 \vspace{1em}
 Great differences were observed between the individual samples in the determination of L- and D-lactic acid, see subsection \ref{subsec:enzymatic_determination_of_l_and_d_lactic_acids}. These variations are likely attributable to experimental inaccuracies during sample preparation, including weighing and pipetting.
