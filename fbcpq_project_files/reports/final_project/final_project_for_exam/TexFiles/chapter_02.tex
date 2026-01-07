@@ -496,15 +496,44 @@ The table \ref{tab:D_lactic_acid_results} summarizes the results from the D-lact
     \caption{D-lactic acid results for feta cheese samples.}
     \label{tab:D_lactic_acid_results}
     \rowcolors{2}{white}{gray!7}
-    \begin{tabular}{ c | c | c | c | c | c | c | c }
+    \begin{tabular}{ c | c | p{1.55cm} | c | c | c | c | c }
         & \multicolumn{1}{c|}{\textbf{Before D-LDH}}
         & \multicolumn{6}{c}{\textbf{After D-LDH}} \\
         \hline
-        Blank & 0.253 & 48.6 & 0.0486 & 1 & 1 & 1 & 1 \\
-        Standard & 0.260 & 50.0 & 0.0500 & 1 & 1 & 1 & 1 \\
-        Sample 1 & 0.275 & 52.5 & 0.0525 & 1 & 1 & 1 & 1 \\
-        Sample 2 & 0.280 & 53.8 & 0.053& 1 & 1 & 1 & 1 \\
+        & A1 (3 min) & A2 (5 min) & A3 (6 min) & A4 (7 min) & A5 (8 min) & A6 (9 min) & A7 (10 min) \\
+        \hline
+        Blank & 0.450 & 0.450 & 0.450 & 0.462 & 0.471 & 0.474 & 0.468 \\
+        Standard & 0.525 & 0.761 & 0.902 & 0.952 & 0.994 & 0.990 & 1.024 \\
+        Sample 1 & 0.540 & 0.595 & 0.654 & 0.673 & 0.642 & 0.710 & 0.719 \\
+        Sample 2 & 0.499 & 0.584 & 0.632 & 0.645 & 0.671 & 0.701 & 0.702 \\
+        \hline
+        \multicolumn{8}{c}{\textbf{Results}} \\
+        \hline
+        & \textbf{$\Delta A_{D-lactic \ acid}$} & \textbf{Conc. D-lactic acid [g/L]} & \multicolumn{5}{c}{\textbf{Content D-lactic acid [g/100 g]}}   \\
+        \hline
+        Blank & 0 & N/A & \multicolumn{5}{c}{N/A} \\
+        Standard & 0.236 & 0.756 & \multicolumn{5}{c}{0.00783} \\
+        Sample 1 & 0.055 & 0.176 & \multicolumn{5}{c}{0.00182} \\
+        Sample 2 & 0.085 & 0.272 & \multicolumn{5}{c}{0.00282} \\
     \end{tabular}
 \end{table}
 
+The concentration and content of D-lactic acid were calculated for all samples. The results are presented in table \ref{tab:D_lactic_acid_results}, and an example of the calculation for Sample 2 is shown below.
+
+The concentration of D-lactic acid were calculated using the formula in equation \ref{eq:D_lactic_acid_concentration}:
+
+\begin{equation}
+    C = \frac{V \times MW}{\epsilon \times d \times v} \times \Delta A_{D-lactic \ acid}
+    \label{eq:D_lactic_acid_concentration}
+\end{equation}
+
+Where:
+\begin{itemize}
+    \item V = final reaction volume [mL]
+    \item MW = molecular weight of D-lactic acid [g/mol]
+    \item $\epsilon$ = extinction coefficient of NADH at 340 nm (6300 L·mol$^{-1}$·cm$^{-1}$)
+    \item d = light path length through the cuvette [cm]
+    \item v = sample volume [mL]
+    \item $\Delta A_{D-lactic \ acid}$ = absorbance difference between measurements A1 and A2
+\end{itemize}
 
