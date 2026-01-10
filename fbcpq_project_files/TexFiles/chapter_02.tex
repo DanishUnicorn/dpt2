@@ -4,7 +4,7 @@
 \setlength{\headheight}{12.71342pt}
 \addtolength{\topmargin}{-0.71342pt}
 
-\section{Introduction}
+\section*{Introduction}
 The following lecture notes have been compiled by combining personal notes taken during class, personal highlights from the lecture slides, and targeted use of generative AI. The AI was provided with my notes and the highlighted slides, together with carefully designed prompts, to ensure that it focused on the most relevant and interesting aspects of each lecture. This approach aims to produce a coherent and focused summary that reflects both the course content and my individual learning perspective.
 
 
@@ -62,7 +62,7 @@ The final examination is a 20-minute oral exam where a student randomly draws a 
 Cheese is defined as coagulated milk and the concentration of milk nutrients, serving to preserve milk nutrients through a low water activity, a low pH, a high salt content, and microbial competition. In 2023, total milk production in the EU-27 was 160.8 million tonnes, of which 96\% was cows' milk. In the same year, Denmark produced 517,900 tonnes of cheese, corresponding to about 2\% of global production. The value of Danish cheese exports reached 14.74 billion DKK, accounting for 56\% of total dairy exports, with per capita consumption in Denmark estimated at 25 - 30 kg/year.
 
 \vspace{1em}
-Cheeses are grouped by coagulation method into those coagulated by renneting, those coagulated by acidification, and those made from cheese whey. Rennet-coagulated cheeses are further classified by firmness (MNFS \%) and minimum pH, including extra hard varieties like Grana (MNFS < 51\%), hard varieties like Emmental and Cheddar, semi-hard varieties such as Gouda, Danbo, and Havarti, and soft varieties like Brie and Feta. Acid-coagulated cheeses include Tvorog, Quarg, and Skyr, while whey cheeses are produced by precipitating proteins through heating and acidification (e.g., Ricotta) or by concentration through evaporation (e.g., Brunost).
+Cheeses are grouped by coagulation method into those coagulated by renneting, those coagulated by acidification, and those made from cheese whey. Rennet-coagulated cheeses are further classified by firmness (MNFS\%) and minimum pH, including extra hard varieties like Grana (MNFS < 51\%), hard varieties like Emmental and Cheddar, semi-hard varieties such as Gouda, Danbo, and Havarti, and soft varieties like Brie and Feta. Acid-coagulated cheeses include Tvorog, Quarg, and Skyr, while whey cheeses are produced by precipitating proteins through heating and acidification (e.g., Ricotta) or by concentration through evaporation (e.g., Brunost).
 
 \vspace{1em}
 The principles of cheese manufacture follow a specific sequence of technical steps: 
@@ -95,7 +95,7 @@ Surface treatments include plastic film, waxed surfaces, smeared surfaces, or mo
 Cheese yield is fundamentally defined by the recovery of milk components, particularly the maximum recovery of casein and fat while minimizing losses in the whey. Scientifically, yield is expressed as the weight of cheese (in kg) of a specific dry matter content produced from a defined quantity of milk with known protein and fat content. Two primary measures are utilized: Actual cheese yield (Ya), which is the weight of the cheese divided by the total weight of milk, starter, and salt, and Moisture-adjusted cheese yield (MACY), which adjusts the actual yield to a reference moisture content to allow for theoretical comparisons between different batches.
 
 \vspace{1em}
-Predictive formulae are employed to anticipate labour requirements, equipment needs, and profitability. These formulae are cheese-type dependent, ranging from the Babcock "rule of thumb" (Yield=1.1$\times$\% fat+2.5×\% casein) to the more complex Van Slyke and Publow formulae. The modified Van Slyke and Publow formula for all cheeses accounts for fat recovery (Kf), milk fat (F), milk casein (C), moisture (M), salt (SC), and whey solids (WS). Retention of milk solids is critical to these calculations; for instance, approximately 85-95\% of fat globules are retained in the casein network, while only 3-5\% of lactose is typically retained, most of which is converted into lactic acid. Protein retention is approximately 76.3\%, including para-casein and small amounts of denatured whey protein from heat treatments or starter cultures.
+Predictive formulae are employed to anticipate labour requirements, equipment needs, and profitability. These formulae are cheese-type dependent, ranging from the Babcock "rule of thumb" (Yield=1.1$\times$\% fat+2.5$\times$\% casein) to the more complex Van Slyke and Publow formulae. The modified Van Slyke and Publow formula for all cheeses accounts for fat recovery (Kf), milk fat (F), milk casein (C), moisture (M), salt (SC), and whey solids (WS). Retention of milk solids is critical to these calculations; for instance, approximately 85-95\% of fat globules are retained in the casein network, while only 3-5\% of lactose is typically retained, most of which is converted into lactic acid. Protein retention is approximately 76.3\%, including para-casein and small amounts of denatured whey protein from heat treatments or starter cultures.
 
 \vspace{1em}
 Several biological and handling factors significantly influence the final yield: 
@@ -117,3 +117,460 @@ To improve production efficiency, several methods to increase cheese yield are i
     \item Phospholipase: YieldMAX (PLA1) modifies the MFGM by hydrolyzing phospholipids to lysophospholipids, which act as emulsifiers to prevent globule rupture, particularly in pasta filata cheese, increasing yield by $\geq$ 1\%. 
 \end{enumerate}
 
+\section{Lecture 04: Starter, pH, and Microflora - 24/11-2025}
+\textbf{Henrik Siegumfeldt, Department of Food Science, 2025}
+
+\vspace{1em}
+\textbf{Summary}
+
+Cheese ripening is characterized by the activity of bacteria immobilized within the cheese matrix. For specific varieties such as Danbo 45+, the gross composition typically comprises Water 48\%, Fat 25\%, Protein 24\%, and others 3\%. Culture actions are central to manufacture, involving the conversion of lactose to lactic acid, which facilitates a pH drop, preservation, texture development, and improved coagulation and syneresis. Culture groups are classified based on their optimal growth temperatures and gas production: 
+\begin{enumerate} 
+    \item Mesophilic (20-30\textdegree C): Non-gas producers including \textit{Lactococcus lactis} and \textit{L. cremoris} (O), and gas producers including citrate-fermenting \textit{L. lactis} (D) and \textit{Leuconostoc} spp. (L). 
+    \item Thermophilic (35-45\textdegree C): Non-gas producers such as \textit{Streptococcus thermophilus} (ST), \textit{Lactobacillus helveticus} (LH), and \textit{Lb. bulgaricus} (LB). 
+    \item Secondary cultures: Includes moulds (\textit{Penicillium roqueforti}, \textit{P. camemberti}), yeasts (\textit{Debaryomyces hansenii}), and bacteria such as \textit{Propionibacteria} and \textit{Brevibacterium linens}. 
+\end{enumerate}
+
+\vspace{1em}
+Starter systems have evolved from liquid cultures in the 1890s to modern Direct Vat Set (DVS) and Direct Vat Inoculation (DVI) systems. Bulk culture propagation is considered complicated compared to DVS, which uses highly concentrated bacterial cells for direct inoculation into cheese vats of 10,000-20,000 liters. Frozen DVS/DVI pellets (F-DVS/DVI) have concentrations between $1 \times 10^{10} - 5 \times 10^{10}$
+cfu/g and require storage at -45\textdegree C. Freeze-dried pellets (FD-DVS/DVI) reach concentrations of $5 \times 10^{10} - 1 \times 10^{11}$ cfu/g, are stored at -20\textdegree C, and require rehydration.
+
+\vspace{1em}
+Cheese segmentation is defined by scalding temperatures, consistency, and traditional culture use. Cottage cheese types use O cultures at 22-32\textdegree C, while soft cheeses like Camembert and Brie use O or LD cultures at a maximum of 35\textdegree C. Semi-hard Continental types such as Gouda and Danbo are scalded at 35-40\textdegree C using LD cultures. Harder varieties, including Pasta Filata and Cheddar, utilize temperatures between 37-43\textdegree C. Extra hard Grana types require scalding at 50-55\textdegree C with ST, LH, and LB cultures.
+
+\vspace{1em}
+During ripening, the microbial flora shifts as Starter LAB (LAB) decrease and Non-Starter Lactic Acid Bacteria (NSLAB), such as \textit{Lacticaseibacillus paracasei} and \textit{Lactiplantibacillus plantarum}, increase. Lactose and citrate metabolism pathways involve homofermentative or heterofermentative processes. Homofermentative citrate-positive LAB produce pyruvate, which is converted to lactate via lactate dehydrogenase (LDH) or into aroma compounds like diacetyl, acetoin, and 2,3 butanediol. Heterofermentative species like \textit{Leuconostoc} reduce acetaldehyde to ethanol via alcohol dehydrogenase.
+
+\vspace{1em}
+The rate of acidification and the minimum pH reached after 24 hours are critical for cheese quality, structure, and biochemical reactions. Minimum pH values range from 4.5-4.6 for Quarg and Danablu to 5.2-5.3 for Emmental and Grana. The pH decrease occurs in two phases: Phase 1 before whey separation during heating and stirring, and Phase 2 after whey separation in the fresh cheese. This development is determined by the ratio of lactose content to buffering substances in the curd. During ripening, pH typically increases, particularly in smeared surface cheeses, due to metabolic activities such as lactate utilization.
+
+
+\section{Lecture 05: Gas Production and Eye Formation - 24/11-2025}
+\textbf{Henrik Siegumfeldt Department of Food Science, 2025}
+
+
+\vspace{1em}
+\textbf{Summary}
+Eye development in cheese is a physical and biochemical process that is governed by specific parameters regarding gas dynamics and the physical state of the cheese matrix. The formation and growth of eyes depend on: 
+\begin{enumerate} 
+    \item Rate and quantity of gas production. 
+    \item Number and size of air pockets and irregularities. \item $\text{CO}_2$ pressure and diffusion rate. 
+    \item Cheese structure and elasticity. 
+    \item Temperature. 
+\end{enumerate}
+
+\vspace{1em}
+Cheeses are categorized by their internal texture, including round-eyed varieties like Danbo, Gouda, and Edam, which typically utilize LD-starters or secondary Propionic Acid Bacteria (PAB) cultures. Open-textured cheeses like Havarti and Esrom also use LD-starters, while closed-texture varieties such as Cheddar and Parmigiano-Reggiano are produced without intended gas openings. In a typical 80 kg Emmental cheese, approximately 120 liters of $\text{CO}_2$ are produced; 60 liters remain dissolved in the cheese mass, 40 liters are lost to the environment, and 20 liters remain to form the eyes. Physically, the pressure in a bubble is defined as two times the surface tension divided by the radius. Consequently, larger eyes grow faster because less gas pressure is required to enlarge an existing large hole compared to maintaining small ones.
+
+\vspace{1em}
+Gas production originates from four primary metabolic pathways: lactose metabolism, citrate metabolism, lactate metabolism, and amino acid catabolism. Citrate fermentation by homofermentative bacteria like L. lactis ssp. lactis biovar diacetylactis is pH-dependent, with optimal growth between 30-35\textdegree C. Heterofermentative organisms like Leuconostoc species produce diacetyl and acetoin below pH 5.8 and avoid acetaldehyde accumulation through alcohol dehydrogenase activity. In Swiss-type cheeses, PAB convert three moles of lactic acid into two moles of propionic acid, one mole of acetic acid, and one mole of $\text{CO}_2$. This eye formation process generally requires two weeks at 10\textdegree C to stabilize chemistry followed by three weeks at 17-20\textdegree C to stimulate growth.
+
+\vspace{1em}
+Butyric acid fermentation, caused by anaerobic spore-forming bacteria such as Clostridium tyrobutyricum, is a detrimental process leading to "late blowing." This reaction converts two moles of lactic acid into butyric acid, two moles of $\text{CO}_2$, and two moles of $\text{H}_2$. This defect is stimulated by high pH, high temperature, and low salt content. Prevention strategies include the addition of nitrate or lysozyme to cheese milk, bactofugation, microfiltration, or the use of nisin-producing starters. Furthermore, Non-Starter Lactic Acid Bacteria (NSLAB) can cause racemisation, converting L-lactate to the less soluble DL-lactate, which forms white crystals on the surface or within cheese holes.
+
+\vspace{1em}
+Oxidative metabolism also contributes to gas production; for instance, Penicillium species and yeasts in surface-ripened cheeses like Brie consume lactate and oxygen to produce $\text{CO}_2$ and water. This process raises the pH to 7-8, driving a gradient that leads to the precipitation of calcium phosphate. Additionally, specific amino acid catabolism through decarboxylation produces $\text{CO}_2$ and biogenic amines. Finally, urease-positive strains of Streptococcus thermophilus can metabolize urea into $\text{CO}_2$ and $\text{NH}_3$, which can cause curds to float in the cheese vat, a notable problem in cottage cheese production.
+
+
+\section{Lecture 06: Cheese Proteolysis - 01/12-2025}
+\textbf{Henrik Siegumfeldt, Department of Food Science, 2021}
+
+\vspace{1em}
+\textbf{Summary}
+
+Proteolysis is defined as the hydrolysis of peptide bonds by peptide bond hydrolases. These enzymes are classified by the International Union of Biochemistry and Molecular Biology as Hydrolases (EC 3), specifically those acting on peptide bonds (EC 3.4). While the terms protease and proteinase are frequently used interchangeably, this is not absolutely correct. Proteinases are endo-acting peptide bond hydrolases that act at peptide bonds in the inner regions of the polypeptide chain away from the N and C termini; examples include chymosin, pepsin, and cathepsin D. Peptidases are exo-acting hydrolases that act only near the ends of polypeptide chains, such as aminopeptidases and carboxypeptidases.
+
+\vspace{1em}
+The substrates for these reactions are milk proteins, primarily caseins ($\alpha_{s1}$, $\beta$, $\alpha_{s2}$, $\kappa$) rather than whey proteins ($\beta$-lactoglobulin, $\alpha$-lactalbumin, bovine serum albumin). Caseins possess a high proportion of proline residues, resulting in an open flexible structure with no rigid tertiary structure, making them highly susceptible to hydrolysis. The assessment of proteolysis involves cheese fractionation (pH 4.6 soluble and insoluble nitrogen) and methods such as Kjeldahl, Dumas, and Formol titration to measure peptides, free amino acids, and $\text{NH}_3$. Measuring proteolysis is essential as an: 
+
+\begin{enumerate} 
+    \item Indication of age and type of cheese. 
+    \item Indication of flavour defects, such as bitterness. 
+    \item Indication of culture lysis or the use of adjunct/ripening cultures. 
+    \item Indication of the specific coagulant used. 
+\end{enumerate}
+
+\vspace{1em}
+ The mechanisms of cheese ripening are structured into four primary areas: \begin{enumerate} \item Primary casein breakdown by indigenous milk proteases and coagulants. \item Starter proteinase activity. \item Starter peptidase activity and lysis of starter bacteria. \item Non-starter lactic acid bacteria (NSLAB) in cheese proteolysis. \end{enumerate}
+
+\vspace{1em}
+Indigenous milk proteases include plasmin, a serine proteinase that dissolves fibrin blood clots and is associated with casein micelles. Plasmin survives high cooking temperatures and is most relevant in high-cook varieties like Swiss or Italian cheeses, where it hydrolyzes $\beta$-casein into $\gamma$-caseins and proteose-peptones. Coagulants, such as animal rennet or chymosin, are aspartic acid proteinases with low pH optima that are partially inactivated at high cooking temperatures. Approximately 2 - 10\% of chymosin is retained in the cheese, where it is responsible for the initial hydrolysis of $\alpha_{s1}$-casein at the $\text{Phe}_{23}- \text{Phe}_{24}$ bond.
+
+\vspace{1em}
+Starter culture activity involves cell-envelope associated proteinases (CEP), also known as lactocepins (e.g., PrtP, PrtB, PrtS), which digest casein peptides produced by rennet. Intracellular degradation is carried out by peptidases, which are released upon bacterial lysis—a process correlated with good flavour production. These include endopeptidases (PepO, PepF), aminopeptidases (PepN, PepC, PepA), proline-specific peptidases (PepX, PepR, PepQ, PepI, PepP), and di/tripeptidases. Finally, NSLAB species such as \textit{Lacticaseibacillus paracasei} and \textit{Lactiplantibacillus plantarum} are excellent survivors that contribute to peptidolysis and introduce specific flavour notes.
+
+
+\section{Lecture 07: Peptide and Amino Acid Analysis - 01/12-2025}
+\textbf{René Lametsch, Associate Professor, University of Copenhagen, 2025}
+
+\vspace{1em}
+\textbf{Summary}
+
+High Pressure Liquid Chromatography (HPLC) is utilized for the analysis of amino acids through a system comprising solvent pumps, a mixer, a sample injection unit, a column, and a detector integrated with a data system. The basic principles of separation within the HPLC column follow a specific methodological procedure: 
+\begin{enumerate} 
+    \item Equilibration (typically over 10 column volumes). 
+    \item Sample injection volume. 
+    \item Gradient elution (utilizing a gradient of Acetonitrile from 0\% to 80\%). 
+    \item Wash (typically over 5 column volumes). 
+    \item Re-equilibration. 
+\end{enumerate}
+
+\vspace{1em}
+Separation is achieved using specialized HPLC columns, such as C18. The detection of amino acids requires a derivatization reaction where the amino acid reacts with ortho-phthalaldehyde (OPA) and N-acetylcysteine to form a product measurable by a fluorescence detector. Quantification is performed by identifying individual peaks on a chromatogram based on retention time, allowing for the measurement of compounds such as aspartic acid, glutamic acid, asparagine, serine, and various hydrophobic and charged amino acids. Specific applications of this technique include the analysis of Danbo and Grana Padano cheeses, where the Total Ion Count (TIC) and UV-280nm absorbance are used to characterize the profiles.
+
+\vspace{1em}
+Protein and peptide characterization is further conducted using Ultra High Pressure Liquid Chromatography (UHPLC) coupled with Mass Spectrometry (MS), specifically employing equipment such as the Exploris 480. The standard identification workflow includes: 
+\begin{enumerate} 
+    \item Enzyme digestion of the protein sample. 
+    \item 1D or 2D chromatography for separation. 
+    \item MS1 analysis to determine the total ion count and mass-to-charge (m/z) ratios. 
+    \item Gas phase fragmentation of selected peptides. 
+    \item MS2 analysis to generate MS/MS spectra. 
+    \item Peak picking and matching through a search engine against protein and DNA sequence databases. 
+\end{enumerate}
+
+\vspace{1em}
+Peptide identification relies on understanding peptide bond fragmentation, which occurs at specific sites designated as a, b, c (N-terminal) and x, y, z (C-terminal). Comparison of observed b-ion and y-ion sequences against theoretical mass tables allows for precise sequence determination.
+
+\vspace{1em}
+Methodological research into plant-based cheese proteolytic activity has investigated the impact of \textit{Lactobacillus helveticus} strains on soy protein isolates (SPI). SDS-PAGE analysis is used to monitor the degradation of soy protein subunits, including lipoxygenase, $\beta$-conglycinin, and glycinin, over a fermentation period of 7 days. Results are visualized through peptigrams that map peptide intensity across the protein sequence and 3D structural models of proteins like glycinin G1 to predict cleavage sites. Free amino acid concentrations, particularly alanine, arginine, glutamic acid, and lysine, are quantified to assess the extent of proteolysis during fermentation.
+
+
+\section{Lecture 08: Aroma - 08/12-2025}
+\textbf{Sylvester Holt, Department of Food Science, 2025}
+\vspace{1em}
+\textbf{Summary}
+Aroma is defined as something smelled orthonasally or retronasally, whereas taste depends on basic sensations categorized as sour, salt, sweet, bitter, and umami. Flavour is the combination of retronasal odour, taste, and chemical feeling. Aroma compounds are volatile organic compounds that interact with approximately 300 different odour receptors in the olfactory system and are active at very low quantities. These compounds belong to various classes, including sulfur compounds, aldehydes, ketones, esters, acids, and alcohols. Major biochemical pathways for aroma formation in dairy include proteolysis of casein into peptides and free amino acids, citrate conversion into diacetyl, lipolysis of triglycerides into free fatty acids, and glycolysis of lactose into lactate.
+
+\vspace{1em}
+The analysis of aroma compounds in cheese involves several critical methodological steps: 
+\begin{enumerate} 
+    \item Sample preparation (cutting, grating, mixing with solvent). 
+    \item Isolation of aroma compounds. 
+    \item Separation of aroma compounds via GC - gas chromatography. 
+    \item Identification of aroma compounds via MS - mass spectrometry. 
+\end{enumerate}
+
+\vspace{1em}
+Isolation techniques include headspace methods such as static headspace sampling (SHS), which mimics direct smelling by analysing the equilibrium between the sample and the headspace. Dynamic headspace sampling (DHS) continuously removes the headspace so that equilibrium is never reached, providing higher sensitivity than solid phase micro extraction (SPME). SPME relies on the partition of volatiles between the headspace and a thin polymeric fiber. Other methods include solvent assisted flavour evaporation (SAFE) and liquid/liquid extraction. Key parameters affecting the concentration of volatiles in the headspace include time, temperature, salts, and the mixture of solvents.
+
+\vspace{1em}
+Separation is achieved through Gas Chromatography (GC), which is used for thermally stable volatile compounds based on their boiling points and interactions with a stationary phase. Identification is primarily performed using Mass Spectrometry (MS) through charged molecular fragments and library matching. Challenges such as the co-elution of compounds like 2-methylbutanal and 3-methylbutanal can be resolved using multidimensional PARAFAC2 modelling, which requires MS data. Additionally, Gas Chromatography-Olfactometry (GC-O) utilizes the human nose as a detector to identify odour-active compounds.
+
+\vspace{1em}
+Quantification is typically conducted via internal standards or standard addition. Because aroma compounds are present in low concentrations (ppb-ppm), they must be concentrated prior to analysis. Absolute quantification is often tedious, and raw peak areas are frequently used as relative measures of concentration. Experimental results indicate that standard curves can vary significantly depending on the cheese matrix, such as Dubliner, Kadett, or Samsø, due to differences in fat, moisture, and amino acid content. For the course report, students must utilize phenotypic clustering heatmaps to identify compounds at high levels in their specific cheese and describe their biochemical formation pathways.
+
+
+\section{Lecture 09: Amino Acid Catabolism - 15/12-2025}
+\textbf{Henrik Siegumfeldt, Department of Food Science, 2025}
+
+\vspace{1em}
+\textbf{Summary}
+
+Amino acid catabolism in dairy products is a fundamental process for flavour development in both fermented milk and ripened cheese. This metabolic activity involves a diverse range of microorganisms, including LAB such as \textit{Lactococcus lactis} and \textit{Streptococcus thermophilus}, as well as other bacteria like \textit{Brevibacterium linens} and \textit{Propionibacterium}, and various yeasts and moulds. LAB require amino acids for four primary functions: 
+\begin{enumerate} 
+    \item Protein and peptide synthesis. 
+    \item Energy production (ATP and proton-motive force). 
+    \item Maintenance of internal pH in acid environments. 
+    \item NADH/$\text{NAD}^+$ (NADPH/$\text{NADP}^+$) regeneration. 
+\end{enumerate}
+
+\vspace{1em}
+The catabolism of amino acids, which exist as 20 basic types in proteins primarily in their L-isomeric form, is facilitated by five main groups of enzymes. Lyases include Threonine aldolase, which converts threonine into glycine and acetaldehyde; the latter is a critical component of yoghurt flavour. Other lyases, such as cystathionine $\beta$-lyase (CBL) and methionine $\gamma$-lyase (MGL), are responsible for producing volatile sulphur compounds like methanethiol and dimethyldisulfide, which are found in high concentrations in surface-ripened cheeses. Dehydratases act anaerobically on amino acids containing hydroxy or sulphur groups, such as serine, threonine, and cysteine.
+
+\vspace{1em}
+Decarboxylases convert free amino acids into $\text{CO}_2$ and biogenic amines. Significant reactions include the conversion of histidine to histamine, tyrosine to tyramine, and glutamate to $\gamma$-amino butyrate (GABA). Biogenic amine formation is important due to potential food intoxication effects, such as histamine intolerance (HIT), which can trigger symptoms like facial flushing, headache, and abdominal pain. Deaminases, particularly the arginine deiminase (ADI) pathway, allow for the direct production of ATP from amino acids and help regulate internal pH, increasing bacterial survival in acidic conditions.
+
+\vspace{1em}
+Aminotransferases catalyze the substitution of an amino group with an oxo-group, typically utilizing $\alpha$- ketoglutarate as an acceptor to produce glutamate and an $\alpha$-keto acid. Specific aminotransferases exist for branched-chain (Leu, Ile, Val), aromatic (Phe, Tyr, Trp), and sulphur-containing (Met) amino acids. Glutamate dehydrogenase (GDH) is essential in this process because it regenerates $\alpha$-ketoglutarate from glutamate, ensuring that aminotransferase reactions can continue even when $\alpha$-ketoglutarate is limited in the cheese. These pathways result in various flavour compounds; for instance, leucine is converted to 3-methylbutanal (isovaleraldehyde), while aspartic acid catabolism leads to the formation of diacetyl, acetoin, and butanediol.
+
+\vspace{1em}
+Methodological approaches to screen for flavour-producing strains include: 
+\begin{enumerate} 
+    \item Genotyping through PCR methods and sequencing to test for the presence of specific genes. \
+    item Enzymatic analysis using permeabilised cells, crude extracts, or pure preparations. 
+    \item Physicochemical analysis, including GC-MS for volatiles and HPLC for amino acids and carboxylic acids. 
+\end{enumerate}
+
+
+\section{Lecture 10: Cheese Flavour - 15/12-2025}
+\textbf{Henrik Siegumfeldt, Department of Food Science}
+
+\vspace{1em}
+\textbf{Summary}
+
+Flavour formation in cheese involves complex biochemical, chemical, and physical processes during manufacture and ripening. The development of flavour is categorized into seven primary metabolic pathways: 
+\begin{enumerate} 
+    \item Lactose and citrate metabolism - Acid and buttery flavour. 
+    \item Peptides - Bitter and umami tastes. 
+    \item Free amino acids - Salt, sweet, acid, bitter \& umami. 
+    \item Amino acid catabolic products - Specific cheese flavours. 
+    \item Esters - Fruity flavours. 
+    \item Thioesters - Cauliflower and cabbage flavours. 
+    \item Fatty acids and methyl ketones - Mouldy and Italian cheese flavours. 
+\end{enumerate}
+
+\vspace{1em}
+Lactose and citrate fermentation is conducted by homofermentative citrate-positive LAB, such as \textit{L. lactis} subsp. \textit{lactis} biovar \textit{diacetylactis}, which produces diacetyl and acetoin in a pH-dependent manner with an optimum growth temperature of 30-35\textdegree C. In heterofermentative citrate-positive LAB, such as Leuconostoc species, production occurs below pH 5.8, and acetaldehyde does not accumulate due to alcohol dehydrogenase activity.
+
+\vspace{1em}
+Proteolysis results in peptides and free amino acids which contribute to background flavours and taste. Many amino acid sequences in casein can become bitter peptides. Properties that increase the bitter flavour of peptides include: 
+\begin{enumerate} 
+    \item Hydrophobicity. 
+    \item Content of proline residues which makes the molecule bulky. 
+    \item Positively charged amino end. 
+    \item A size of about 2 - 12 amino acids. 
+    \item Large peptides may also be bitter-astringent. 
+\end{enumerate} 
+
+\vspace{1em}
+The risk of bitterness is generated by the coagulant type, specifically microbial rennet with a low clotting (C) to proteolytic (P) ratio, and starter culture characteristics such as PI type proteinase and low peptidase activity. Conversely, di- and tri-glutamyl peptides contribute to savoury, umami, and kokumi tastes, showing synergy with glutamic acid and salt.
+
+\vspace{1em}
+Amino acid catabolism produces specific cheese aromas including ketones, aldehydes, acids, alcohols, and sulfur compounds. Enzymes involved include decarboxylases, aminotransferases, deaminases, lyases, and dehydratases. Aminotransferases require $\alpha$-ketoglutarate, while glutamate dehydrogenase (GDH) is crucial for regenerating $\alpha$-keto-glutarate in the cheese. Non-starter lactic acid bacteria (NSLAB) play a vital role because $\alpha$-keto acid decarboxylase is rarely found in dairy starter cultures.
+
+\vspace{1em}
+Lipolysis involves the breakdown of triglycerides into fatty acids, methyl ketones, and lactones. Methyl ketones, especially 2-heptanone and 2-nonanone, are present at high concentrations in blue mould cheese and are produced by Penicillium roqueforti. Esterification is a reaction between an alcohol and a free fatty acid, primarily occurring in long-ripened cheeses with low water activity. Thioesters, responsible for cauliflower and cabbage flavours, are formed through metabolic cooperation on cheese surfaces between microflora like Brevibacterium linens and Staphylococcus. Fat serves both as a source of aroma components and as a solvent for aroma compounds derived from other metabolic pathways. Over 600 volatile compounds have been identified in cheese using methods such as GC-Olfactometry, GC-MS, and the Nasal Impact Frequency (NIF) method.
+
+
+\section{Video Lecture: Fermented Milks - 22/12-2025}
+\subsection{Introduction and Process Examples}
+\textbf{Anni Hougaard, Department of Food Science, University of Copenhagen}
+
+\vspace{1em}
+\textbf{Summary}
+
+Milk and butter-based culture has been central to the Nordic diet since the Middle Ages. Due to short summers and grazing periods, Nordic countries developed a storage culture to preserve food for winter, leading to the traditional consumption of milk as fermented products, including cheese. These traditional products are primarily based on mesophilic cultures, with the exception of skyr. Fermented milk products offer several advantages, including increased shelf life, improved digestibility and bioavailability of nutrients, utility for individuals with lactose malabsorption, and use as functional foods containing probiotics.
+
+\vspace{1em}
+The manufacture of yoghurt, which includes both set and stirred varieties, follows a standardized preliminary treatment. The process requires standardizing the fat content to <0.5-3.23 g 100 $\text{g}^{-1}$ and increasing the protein content by 1-3 g 100 $\text{g}^{-1}$ SMP, 1-2 g 100 $\text{g}^{-1}$ WPC, or through evaporation or UF retentate. The processing stages are: 
+\begin{enumerate} 
+    \item Homogenise the milk base at 60-70\textdegree C and 15-20 MPa pressure. 
+    \item Heat to 80-85\textdegree C for 30 min or 90-95\textdegree C for up to 5 min. 
+    \item Cool to 37-45\textdegree C and inoculate with starter culture. 
+    \item For set-type: add flavouring, fill containers, and incubate until pH $\approx$4.6. 
+    \item For stirred-type: fill fermentation tank, incubate until pH $\approx$4.6, pre-cool to 20-25\textdegree C, mix with fruit and package. 
+    \item Blast cool to <5\textdegree C, transfer to cold store and dispatch. 
+\end{enumerate} 
+
+\vspace{1em}
+Alleged nutritional additions to yoghurt may include prebiotics, dietary fibre, phytosterols, dairy derived ingredients (lipids, proteins, peptides), fatty acids, minerals, and various vitamins.
+
+\vspace{1em}
+Kefir is produced through traditional, industrial, or Russian/European methods using kefir grains (2-10\%) or commercial cultures. Its complex microbial composition includes \textit{Lactococcus lactis} subsp. \textit{lactis}, \textit{Streptococcus thermophilus}, and various \textit{Lactobacillus} species such as \textit{L. kefiri} and \textit{L. acidophilus}. Yeasts such as \textit{Kluyveromyces marxianus} and \textit{Saccharomyces cerevisiae} are present, alongside other species like \textit{Acetobacter aceti} and the mould \textit{Geotrichum candidum}.
+
+\vspace{1em}
+Buttermilk was traditionally a by-product of butter manufacture from fermented 40\% cream using mesophilic starters in churns. While continuous butter-making led to buttermilk produced from fermented skim milk, "traditional buttermilk" is produced from 6-8\% fat cream in churns to maintain quality and minimize oxidation risk. Koldskål is a Danish sweet cold dairy beverage made from buttermilk with eggs, sugar, cream, tykmælk, vanilla, and lemon, traditionally served with crispy biscuits called kammerjunker.
+
+\vspace{1em}
+Concentrated fermented milks, such as Skyr and Ymer, utilize different concentration methods including cloth filtration, nozzle separators, or ultrafiltration. Skyr is an ancient product, at least 1000 years old, traditionally involving Streptococcus thermophilus and \textit{Lactobacillus delbrueckii} subsp. \textit{bulgaricus}. Traditional Nordic products like \textit{Tettemelk}, \textit{Långfil}, and \textit{Viili} utilize ropy cultures that produce exopolysaccharides (EPS) to achieve texturizing effects. Combining rennet and acid gelation results in stiffer gels with a higher propensity for syneresis.
+
+
+\subsection{Changes In the Micelles}
+\textbf{Richard Ipsen, Department of Food Science, University of Copenhagen}
+
+\vspace{1em}
+\textbf{Summary}
+
+The acidification of skim milk results in an initial decrease of the average micellar mass and radius alongside a redistribution of mass within the micelles. This reduction is primarily caused by the dissolution of small units of material from individual micelles, triggered by the loss of colloidal calcium phosphate (CCP) at lower pH levels. At neutral pH, approximately 30\% of the calcium in milk is in ionic form, with the remainder bound to the micelles as CCP. As pH decreases, there is a gradual increase in ionic "free" calcium, while colloidal calcium and phosphate exhibit a concomitant decrease until pH 5.5 is reached. Following this point, more calcium is removed from the micelle than phosphate. After reaching a pH of about 5.5, previously dissolved casein molecules, which gradually lose their charge and become more hydrophobic, reassemble onto the micelle.
+
+\vspace{1em}
+The stability of the casein micelle is maintained by the glycomacropeptide (GMP) part of $\kappa$-casein, which is hydrophilic and flexible, sticking out into the serum phase to provide steric stabilization. As the pH approaches the isoelectric point (pI), this protective layer collapses and steric stabilization disappears, making interactions between individual micelles possible. This transition is steep and irreversible below a certain pH minimum, approximately 5 at 20\textdegree C. The resulting aggregation of casein micelles leads to an increase in viscosity and particle size. Measurement of the zeta potential confirms that the negative charge of the micelle decreases as pH levels drop.
+
+\vspace{1em}
+The dissociation and re-association of caseins are governed by several factors: 
+\begin{enumerate} 
+    \item Temperature and the hydrophobic effect: Much dissociation occurs at 4\textdegree C, while only slight dissociation occurs at 30\textdegree C, with most casein remaining in the micelles above 25\textdegree C.
+    \item Composition: Mainly $\beta$-casein and $\kappa$-casein dissociate independently rather than as constant complexes.
+    \item Isoelectric precipitation: When pH approaches the isoelectric point, casein is associated back onto the micelles, meaning the original structure is not reformed. 
+\end{enumerate}
+
+\vspace{1em}
+Heat treatment significantly modifies these processes by causing whey proteins to denature when temperatures exceed $\sim$60\textdegree C. The free thiol group of $\beta$-lactoglobulin is activated, leading to the formation of micelle-bound complexes through covalent disulphide bonds to $\kappa$-casein or the formation of soluble aggregates in the serum phase. These complexes are formed through hydrophobic interactions and inter-molecular SS bonds between whey proteins, $\kappa$-casein, and traces of $\alpha_{s}$-caseins. In heated milk, the associated whey proteins affect the microstructure of the resulting acid milk gel, increasing the storage modulus (G') and the pH of gelation.
+
+\vspace{1em}
+Structure formation in these systems follows a defined sequence: 
+\begin{enumerate}
+    \item Initial gel network is formed as a result of whey proteins binding to the casein micelles and/or forming soluble aggregates.
+    \item Loosening of casein micelles occurs due to the continued loss of calcium.
+    \item Casein micelles fuse to form the final network as pH approaches the isoelectric point of casein ($\sim$4.8). 
+\end{enumerate}
+
+
+\subsection{Processing and Technologies}
+\textbf{Richard Ipsen, Department of Food Science, University of Copenhagen}
+
+\vspace{1em}
+\textbf{Summary}
+
+The production of fermented milk products begins with the selection of a substrate for fermentation, which is influenced by milk type, cattle breed, genetic variants, and seasonal variations. To prepare the milk base, manufacturers may increase the dry matter percentage through boiling, evaporation, or ultrafiltration, followed by standardization and the potential addition of stabilizers, emulsifiers, or fat replacers. Flavoring ingredients, such as vegetables, fruit, or cereals, may also be incorporated into the substrate.
+
+\vspace{1em}
+The manufacture of these products follows a sequence of basic production steps designed to ensure safety and desired physical properties: 
+\begin{enumerate} 
+    \item Homogenization (50-70\textdegree C, 10-20 MPa) to improve the viscosity of the final product. 
+    \item Heat treatment to destroy pathogenic organisms, produce stimulating or inhibitive factors for the starter culture, and induce physical-chemical changes. 
+    \item Fermentation, where temperature, time, and pH are controlled using specific starter organisms, often in a Direct Vat Set (DVS) state. 
+    \item Whey drainage for specific varieties such as ymer or labneh. 
+    \item Cooling and stirring, which determine the final pH and viscosity. 
+    \item Further processing, which may include drying, freezing, or additional heat treatment before filling and packaging. 
+\end{enumerate}
+
+\vspace{1em}
+Technological variations define specific regional and traditional products. In Scandinavia and Denmark, traditional buttermilk was historically a byproduct of butter manufacture from fermented 40\% cream. This process utilized mesophilic starters, specifically \textit{Lactococcus lactis} ssp. \textit{lactis} biovar \textit{diacetilactis} and various \textit{Leuconostoc} subspecies, resulting in a product with a high content of phospholipids derived from the milk fat globule membrane.
+
+\vspace{1em}
+Concentrated fermented milk products are characterized by the removal of whey. Skyr, an Icelandic product with a 1000-year history, is produced from skimmed milk using a thermophilic starter and the addition of cheese rennet, with the whey traditionally drained in cotton bags. Ymer, developed in Denmark in 1937, is produced by heating mesophilic fermented skimmed milk to approximately 50\textdegree C, causing the curd to rise due to $\text{CO}_2$ production. After the whey is drained, cream is mixed back in to reach a final fat content of 3.5\%.
+
+\vspace{1em}
+Yoghurt manufacture is categorized into stirred yoghurt, where fermentation occurs in tanks, and set yoghurt, where fermentation takes place in the final package. Across all varieties, heat treatment is considered crucial to the resulting texture and consistency. These fermented milks serve as effective carriers for probiotic bacteria, making them common functional foods that can be successfully industrialized while maintaining traditional characteristics.
+
+
+\subsection{Structure Formation}
+\textbf{Richard Ipsen, Department of Food Science, University of Copenhagen}
+
+\vspace{1em}
+\textbf{Summary}
+
+Structure formation in fermented milks is fundamentally dependent on heat treatment and the resulting effects on the whey proteins. The development of the gel network during acidification is categorized into specific pH intervals that dictate the physical state of the protein matrix: 
+\begin{enumerate} 
+    \item pH 5.8-5: The number of protein aggregates decreases in the vicinity of the gel point as the network forms. In heat-treated milk, the initial network is formed as a consequence of whey protein associated with the micelle, whereas in unheated milk, the solubilization of $\text{Ca}^{2+}$ continues after the gel point. 
+    \item pH 5-4.6: Gel stiffness increases most significantly in this interval, independent of heat treatment. The network contracts and pore size increases due to rearrangements. Changes in this regime are primarily a consequence of micellar interactions. 
+    \item pH 4.6-4.2: The network achieves its final structure. Ionic interactions have a maximum near pH 4.6, while hydrophobic interactions, hydrogen bonds, and disulphide bonds also exert effects. 
+\end{enumerate}
+
+\vspace{1em}
+Protein content and dry matter (DM) enrichment are essential for texture development. It is the protein content that primarily exerts an effect on texture, and the type of dry matter used is important. The addition of skim milk powder or evaporation results in less protein concentration than ultrafiltration. Manufacturers often use tailormade ingredients, typically a mix of casein/caseinates and whey protein.
+
+\vspace{1em}
+Heat treatment intensity significantly impacts the final network. Unheated milk produces a coarse network with large pores and casein aggregates between 0.5-1 $\mu$m, while heat-treated milk produces a finer network with smaller pores and aggregates approximately half that size. The optimum temperature for stirred yoghurt is in the range of 82-93\textdegree C for 12-25 min; however, heat treatment can be too intensive, resulting in a coarse network. Homogenization improves texture through the direct incorporation of fat globules into the protein network as active fillers, where casein covers the fat globules so they act as building blocks.
+
+\vspace{1em}
+The best texture and lowest whey separation are provided by an intermediate to high inoculation rate (e.g., 2\% bulk starter) and a low incubation temperature of approximately 40\textdegree C. Temperature and mechanical treatment after fermentation are also crucial. Stirred yoghurt cooling is carried out via agitation in the vat or using plate/tubular coolers, which can result in structural damage. Filling at 20-22\textdegree C is considered a compromise that allows for the rebuilding of mechanically damaged structures while avoiding the risk of acidification proceeding too far in the package. Final cooling results in increased firmness and viscosity due to the increased size and contact area of casein aggregates.
+
+\section{Lecture 11: Cheese Defects - 05/01-2026}
+\textbf{Anni Bygvrå Hougaard, University of Copenhagen, 2025-26}
+
+\vspace{1em}
+\textbf{Summary}
+
+Cheese defects are broadly categorized into rind, body, taste, and color defects resulting from milk composition, inappropriate use of starters or coagulants, brine and salting issues, or ripening and packaging conditions. Early blowing is a defect characterized by the appearance of holes after salting but before ripening, typically within 24 to 48 hours in continental cheeses. This is caused by microbial contamination from coliforms, heterofermentative bacteria such as \textit{Leuconostoc} and \textit{Lactobacillus} species, or yeasts, which ferment lactose into lactic acid, acetic acid, ethanol, $\text{CO}_2$, and $\text{H}_2$. Prevention strategies for early blowing include: 
+\begin{enumerate}
+    \item Finding and cleaning the contamination source (pipes, tanks, tools, and hygiene).
+    \item Implementing pasteurization.
+    \item Using highly active starter cultures to ensure pH falls below 6.0 as quickly as possible.
+    \item Monitoring phage pressure in the plant. 
+\end{enumerate}
+
+\vspace{1em}
+Late blowing appears after several weeks of ripening, ranging from 15 days to 2 months, due to the detrimental activity of anaerobic spore-forming, lactate-fermenting bacteria such as \textit{Clostridium tyrobutyricum}, \textit{Cl. sporogenes}, \textit{Cl. butyricum}, and \textit{Cl. beijerinckii}. This reaction converts two moles of lactic acid into butyric acid, two moles of $\text{CO}_2$, $\text{H}_2\text{O}$, and two moles of $\text{H}_2$. Growth is stimulated by high pH, high temperature, low salt content, and high spore numbers. Prevention of late blowing involves adding nitrate or lysozyme to cheese milk, bactofugation, microfiltration, using nisin-producing starters, or employing anticlostridial \textit{Lactobacillus} from cheese microflora.
+
+\vspace{1em}
+Texture defects such as cracks and slits are most frequently reported in Cheddar cheese when \textit{Streptococcus thermophilus} is part of the starter. Possible mechanisms include the fermentation of residual galactose by non-starter lactic acid bacteria (NSLAB), decarboxylation of amino acids like glutamic acid, histidine, and tyrosine, or inadequate pressing. Color defects include pink discoloration, which can be caused by the carotenoid-producing thermophile \textit{Thermus thermophilus} in cheeses without colorants. Browning in blue cheese is associated with \textit{Yarrowia lipolytica}, where tyrosine degradation leads to the accumulation of brown pyomelanin pigments, a process stimulated by high manganese content.
+
+\vspace{1em}
+Crystal defects arise from the racemisation of L-lactic acid to DL-lactic acid by NSLAB, as DL-lactate is less soluble and forms small white crystals near surfaces and in holes. Tyrosine crystals, known as "pearls," typically form in long-ripened, low-water-content cheeses like Parmigiano-Reggiano due to the low water solubility of tyrosine. Bitterness is caused by "unbalanced" proteolysis resulting in a buildup of hydrophobic peptides, particularly from the C-terminal region of $\beta$-casein. The risk of bitterness is influenced by: 
+\begin{enumerate}
+    \item Coagulant type: Low Clotting/Proteolytic (C/P) ratios, such as in bovine pepsin or certain microbial rennets, increase risk.
+    \item Quantity and retention: High rennet levels and lower pH at whey drainage retain more chymosin.
+    \item Starter culture: PI "bitter" strains, slow cell lysis, or low peptidase activity. 
+\end{enumerate}
+
+\vspace{1em}
+Biogenic amine formation, particularly histamine levels exceeding 400 ppm, is a concern in long-ripened cheeses. The highest risks are associated with raw milk, poor hygiene, low salt, and extended ripening times. There is currently no regulatory control of biogenic amines in cheese, and biogenic amine-negative starter cultures do not guarantee a defect-free product.
+
+
+\section{Lecture 12: Engineering of Cheese Ripening - 05/01-2026}
+\textbf{Anni Bygvrå Hougaard, Associate professor FOOD, 2025-26}
+
+\vspace{1em}
+\textbf{Summary}
+
+The engineering of cheese ripening involves the manipulation of specific parameters, including ripening time, fat and salt levels, fat composition, and lactose levels, to address production costs and consumer health. Accelerated cheese ripening (ACR) aims to reduce ripening time while maintaining flavour, texture, and safety. ACR focuses on proteolysis and amino acid catabolism as essential prerequisites for flavour development. There are five primary approaches used to achieve ACR: 
+\begin{enumerate} 
+    \item Elevated ripening temperature. 
+    \item Addition of exogenous enzymes. 
+    \item Addition of adjunct or attenuated cultures. 
+    \item High-pressure (HP) treatment. 
+    \item Raw milk. 
+\end{enumerate}
+
+\vspace{1em}
+Elevated ripening temperature is the simplest and most frequently used method, technically simple with no legal barriers, though it requires high microbiological quality milk to avoid off-flavours and microbial spoilage. Addition of exogenous enzymes, such as proteases and lipases, offers specific action but is limited by high costs and difficulties in achieving uniform distribution. Adjunct or attenuated cultures—which may be wild type, mutant, or heat/freeze shocked—utilize the full enzyme complement of lactic acid bacteria to increase proteolysis and amino acid catabolism simultaneously. High-pressure treatment (300--600 MPa) promotes bacterial lysis and makes the casein matrix more susceptible to proteolysis.
+
+\vspace{1em}
+Reduced fat cheese manufacture involves decreasing fat levels and compensating with increased moisture and protein. This results in a dense protein matrix, leading to a rubbery texture and higher concentrations of bitter peptides. To produce these cheeses, manufacturers must limit syneresis through: 
+\begin{enumerate} 
+    \item Lower acidification rates and higher pH at whey drainage. 
+    \item Decreased coagulant addition. 
+    \item Lower cooking temperatures. 
+    \item Shorter holding and stirring times. 
+\end{enumerate}
+
+\vspace{1em}
+Reduced salt cheese addresses the correlation between sodium consumption and hypertension. Sodium chloride acts as a hurdle against pathogens and modulates the activity of rennet, plasmin, and starter cultures. Salt reduction typically decreases starter lysis and free amino acid levels while increasing the levels of bitter peptides such as $\beta$-CN(f193-209). Favourable flavour formation in salt-reduced cheeses requires additional actions, such as selecting highly autolytic starter cultures or using low-proteolytic coagulants like camel chymosin.
+
+\vspace{1em}
+Other specialized engineering includes vegetable fat cheeses, where saturated milk fat is replaced by oils such as corn or wheat germ oil to reduce cholesterol. Finally, lactose-free cheese is produced through lactose hydrolysis using lactase. This can be conducted for 1-2 hours at 37\textdegree C or 12-14 hours at 4\textdegree C, with the latter providing a lower risk of off-flavours. Products like Kees Extra Gerijpt contain 60\% less saturated fat and 30\% less salt than standard varieties.
+
+
+\section{Lecture 13: Cheese Curd Formation - 07/01-2025}
+\textbf{Anni Bygvrå Hougaard, Associate professor FOOD, University of Copenhagen, 2025-26}
+
+\vspace{1em}
+\textbf{Summary}
+
+The process of cheese curd formation is systematically categorized into four primary stages: 
+\begin{enumerate} 
+    \item Enzymatic reaction. 
+    \item Aggregation. 
+    \item Gelation. 
+    \item Syneresis. 
+\end{enumerate}
+
+\vspace{1em}
+The enzymatic phase involves the interaction between a coagulant (rennet) and the casein micelles. Coagulants are derived from animal, microbial, fungal, or vegetable sources, or produced via fermentation (FPC), with activity measured in International Milk Clotting Units (IMCU) per ml. Chymosin specifically targets $\kappa$-casein, which contains 169 amino acids. The glycomacropeptide (GMP) portion, representing 36-37\% of the $\kappa$-casein molecule, is negatively charged and provides steric and electrostatic stabilization to the micelle. During this phase, chymosin "shaves" the hairy layer of the micelle, reducing its diameter by approximately 12 nm. Hydrolysis of $\kappa$-casein follows first-order kinetics; however, aggregation of micelles does not begin until approximately 85\% of the total $\kappa$-casein has been hydrolyzed. For a single micelle to aggregate, approximately 97\% of its $\kappa$-casein must be hydrolyzed.
+
+\vspace{1em}
+Aggregation is a second-order bimolecular process involving particle collisions. Micelle stability is maintained by overlapping hairy layers that provide steric repulsion (entropic and osmotic models) and electrostatic repulsion. High-tech measurement techniques include Dynamic Light Scattering (DLS) to monitor hydrodynamic radius and $\zeta$-potential (Zeta potential) to measure electrical potential at the slipping plane. Theoretical interpretations of clotting time often utilize the Holter-Foltmann relation, while the Energy Barrier Model describes the kinetics of aggregation by linking the enzymatic reaction to a linear reduction in the energy barrier. Fractal aggregation simulations indicate that the fractal dimension (D) for rennet-induced aggregates is generally between 2.2 and 2.6.
+
+\vspace{1em}
+Gelation is studied using Small Amplitude Oscillatory Rheology to determine the elastic modulus (G') and viscous modulus (G''). The storage modulus continues to increase long after $\kappa$-casein hydrolysis is complete due to the continuing incorporation of additional casein into the network, the fusion of junctions creating more bonds, and the physical rearrangement of strands. Factors influencing gelation include: 
+\begin{enumerate} 
+    \item Casein and enzyme concentration: Higher concentrations shorten coagulation time and increase firming rates. 
+    \item Calcium levels: Increased soluble and colloidal calcium (typically 33\% and 66\% of total Ca, respectively) improves gel strength. \
+    item pH and Temperature: Optimum firming occurs near pH 6.25, while temperatures above 40\textdegree C can inactivate chymosin. 
+    \item Heat treatment: Strong heat treatment denatures whey proteins, which associate with the micelle surface and slow gelation. 
+\end{enumerate}
+
+\vspace{1em}
+Syneresis is the spontaneous expulsion of whey from the porous casein network, which regulates moisture, lactose, and mineral content in cheese. The process is driven by microsyneresis (junction rearrangements) creating endogenous syneresis pressure. Local whey transport is described by Darcy's equation, where flow velocity depends on the permeability coefficient (B), whey viscosity ($\eta$), pressure (p), and path length (l). Smaller curd grain sizes (ranging from 2-5 mm for hard cheese to 15 mm for soft cheese) provide more surface area and faster syneresis. Other variables increasing syneresis include lower pH, higher temperatures (enhancing hydrophobic interactions), and mechanical stirring, whereas homogenization and whey protein denaturation reduce it.
+
+
+\section{Lecture 14: Cheese Varieties - 07/01-2026}
+\textbf{Anni Bygvrå Hougaard, Associate professor FOOD, University of Copenhagen, 2025-26}
+
+\vspace{1em}
+\textbf{Summary}
+
+The recognition and standardization of cheese varieties began with the International Dairy Federation (IDF) in 1903 and the Stresa Convention in 1951. The Stresa Convention served as the first international agreement on cheese names and established two levels of protection through distinct appendices: 
+\begin{enumerate} 
+    \item Appendix A: Protection of names that can only be produced in a specific place or origin, including Roquefort, Gorgonzola, Parmigiano-Reggiano, and Pecorino Romano. 
+    \item Appendix B: Mutual permission to use 30 cheese names on domestic and international markets based on product characteristics rather than origin. 
+\end{enumerate} 
+
+\vspace{1em}
+National standards in Denmark subsequently renamed several varieties, such as changing Steppeost to Danbo and Dansk Schweizer to Samsø. The Codex Alimentarius, created in 1963 by the FAO and WHO, develops international standards for generic cheese varieties relevant to global trade. It maintains five horizontal cheese standards, including a general standard and specific standards for unripened, brine, extra hard grating, and whey cheeses. Individual standards, such as for Cheddar, define permitted ingredients like starter cultures, rennet, and sodium chloride, while regulating food additives including colors (e.g., Annatto) and preservatives like sodium nitrate and nisin.
+
+\vspace{1em}
+Geographical Indications (GIs) in the European Union are justified by the concept of terroir, which posits that a product's qualities are derived from the natural and human factors of its specific territory. The EU system, which came into effect in 1992, identifies three designations: 
+\begin{enumerate} 
+    \item Protected Designation of Origin (PDO): The product must be produced, processed, and prepared in the geographical area, with characteristics essentially due to that area. 
+    \item Protected Geographical Indication (PGI): The product must be produced, processed, or prepared in the area, with a reputation or quality attributable to it. 
+    \item Traditional Speciality Guaranteed (TSG): The product must be traditional (25 years) or established by custom but has no link to a specific geographical area. 
+\end{enumerate} 
+
+\vspace{1em}
+Specific examples include Danbo (PGI), which must be produced and matured in Denmark, and Mozzarella (TSG), which requires a particular recipe involving a natural starter and bovine rennet with 20-30\% pepsin. Feta (PDO) is produced from a mixture of sheep (min. 70\%) and goat milk and ripened for at least two months. Cabrales (PDO) is ripened in caves for at least two months using wild complex microflora.
+
+\vspace{1em}
+While GIs provide competitive advantages and added value for producers, they have become a contentious international trade issue, specifically between the US and the EU. Additionally, varieties like Cabrales present safety considerations, as tyrosine decarboxylase activity can lead to tyramine levels of 1000 mg/kg, resulting in facial flushing and headaches. Similarly, West Country Farmhouse Cheddar (PDO) requires milk from specific UK counties and maturation for at least 9 months. Swiss classification uses the AOP system, where Emmentaler AOP requires production in cooperative dairies using raw milk sourced within a 30 km radius without additives.
