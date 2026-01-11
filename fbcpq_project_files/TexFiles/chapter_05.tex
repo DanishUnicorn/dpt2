@@ -34,9 +34,106 @@ Water is expelled from the milk gel during production of cheese, and this is an 
 \vspace{1em}
 Give the name of this process and describe the mechanism (also on a microstructural level) behind how water is being expelled from the milk gel.
 
+\subsubsection*{Answer}
+Syneresis is the process by which water is expelled from the milk gel during cheese production. It involves the spontaneous contraction of the para-casein matrix, leading to the expulsion of the aqueous whey phase that contains water and water-soluble milk constituents.
+
+\vspace{1em}
+On a microstructural level, the mechanism is driven by the dynamic rearrangement, fusion, and tightening of the casein network. This internal restructuring, often referred to as microsyneresis, involves the formation of new bonds between casein strands and the fusion of junction zones. As these rearrangements occur, the casein particles move into a more compact structure, which creates an endogenous syneresis pressure (stress) within the viscoelastic network. This pressure effectively "squeezes" the physically entrapped serum out of the porous matrix toward the surface of the curd grains.
+
+\vspace{1em}
+The local transport of whey through the gel is governed by Darcy’s equation, given in equation \ref{eq:ex_answer_darcys_equation}:
+\begin{equation}
+v = \frac{B}{\eta} \times \frac{p}{l}
+\label{eq:ex_answer_darcys_equation}
+\end{equation}
+
+This states that the flow velocity (v) depends on the factors described in table \ref{tab:exam_question_1.1_table}.
+\begin{table}[h]
+    \centering
+    \caption{Parameters affecting whey flow velocity during syneresis according to Darcy's equation.}
+    \label{tab:exam_question_1.1_table}
+    \rowcolors{2}{white}{gray!7}
+    \begin{tabular}{ l | p{10cm} }
+        \textbf{Parameter} & \textbf{Description} \\ 
+        \hline
+        \textbf{B}: (Permeability coefficient) & Average size and number of pores in the gel network \\ 
+
+        \textbf{p}: (Pressure) & Sum of endogenous syneresis pressure, external pressure, and gravitational pressure \\
+
+        \textbf{$\eta$}: (Viscosity) & Viscosity of the expelling whey \\ 
+
+        \textbf{l}: (Distance) & Length of the path over which the liquid must flow to reach a surface \\
+    \end{tabular}
+\end{table}
+
+\vspace{1em}
+As syneresis progresses, the pore size and permeability of the gel decrease because the network strands become thicker and the overall structure becomes more constrained, which eventually slows the rate of whey expulsion.
+
 \subsection*{1.2}
 \vspace{1em}
 Explain how cutting the milk gel, stirring of the curd grains and temperature changes in the cheese vat effect the amount of water that is expelled. Elaborate on how pH at whey drainage affects calcium level in the cheese.
+
+\subsubsection*{Answer}
+
+\begin{enumerate} 
+    \item \textbf{Cutting the Milk Gel:} Cutting the coagulum into smaller grains accelerates syneresis by significantly increasing the surface area available for whey escape and reducing the distance (l) the whey must travel to reach the grain surface. Finer cuts lead to higher flow velocities (v) and lower moisture content in the final cheese. 
+    \item \textbf{Stirring of the Curd Grains:} Agitation prevents the grains from matting or sedimenting, which would otherwise impede syneresis. Stirring also applies external pressure ($\text{p}_{ex}$) through collisions between curd grains and against vat walls, increasing the total pressure (p) driving the whey out. 
+    \item \textbf{Temperature Changes:} Increasing the temperature of the curd-whey mixture (cooking/scalding) promotes syneresis by increasing hydrophobic interactions between casein molecules. This leads to faster network rearrangements, a higher endogenous syneresis pressure, and a more rapid increase in the permeability of the gel. 
+\end{enumerate}
+
+\vspace{1em}
+Effect of pH at Whey Drainage on Calcium Levels The pH level at the time of whey drainage is the primary determinant of the total calcium-to-casein ratio in the final cheese. In native milk, a large portion of calcium exists as colloidal calcium phosphate (CCP), which acts as a structural cross-link within the micelles. As the pH decreases during manufacture due to the fermentation of lactose to lactic acid, this CCP gradually solubilizes into the serum phase.
+
+\vspace{1em}
+Because the whey removed during drainage represents the majority of the liquid lost during the process, any calcium that has been solubilized is permanently removed from the curd. Consequently, a lower pH at drainage results in lower retained calcium and a lower buffering capacity in the finished cheese. High-calcium cheeses (drained at high pH, e.g., Emmental) tend to be more elastic, while low-calcium cheeses (drained at lower pH, e.g., Feta or Cheddar) are typically more short or brittle.
+
+\vspace{0.5em}
+\begin{figure}[h]
+    \centering
+    \resizebox{0.9\textwidth}{!}{%
+    \begin{tikzpicture}[line width=2pt]
+            
+    % --- Labels
+    \node at (2,6,0) {\textbf{Milk gel before cutting}};
+    \node at (2,5.5,0) {Surface area = $6 \times 4^2 = 96 cm^2$};
+    \node at (9,6,0) {\textbf{Milk gel after cutting}};
+    \node at (9,5.5,0) {Surface area = $8 \times 6 \times 2^2 = 192 cm^2$};
+    
+    % --- Big cube: 4x4x4 (scale factor 2)
+    \begin{scope}[scale=2]
+      \perfectcube
+    \end{scope}
+    \draw[->, line width=1pt]
+    (1,-1,2) -- (3.2,-1,2)
+    node[midway, below] {$l_{big_cube}=2cm$};
+    
+    % --- Four small cubes: 2x2x2 (aligned in height with big cube)
+ 
+    
+    % top row
+    \begin{scope}[shift={(7,2,0)}]
+      \perfectcube
+    \end{scope}
+        \draw[->, line width=1pt]
+        (8,-1.2,2) -- (9,-1.2,2)
+        node[midway, below] {$l_{small_cubes}=1cm$};
+    \begin{scope}[shift={(10,2,0)}]
+      \perfectcube
+    \end{scope}
+    
+    % bottom row
+    \begin{scope}[shift={(7,-1,0)}]
+      \perfectcube
+    \end{scope}
+    \begin{scope}[shift={(10,-1,0)}]
+      \perfectcube
+    \end{scope}
+
+    \end{tikzpicture}}
+    
+    \caption{Schematic illustration of the cutting effect of curd grains on syneresis. The left cube is uncut, while the right sides shows the smaller cubes. "l" is the distance whey must travel from the interior to reach the surface.}
+    \label{fig:exam_question_1.2_figure}
+\end{figure}
 
 
 \newpage
@@ -44,13 +141,19 @@ Explain how cutting the milk gel, stirring of the curd grains and temperature ch
 \subsection*{2.1}
 Coagulants from different sources (animals, microorganisms, plants) can be used in the production of cheese. Give examples of different types of commonly used coagulant preparations and describe differences in their primary action on casein in the cheese vat as well as what kind of differences the different coagulants may cause during ripening?
 
+\subsubsection*{Answer}
+
 \subsection*{2.2}
 \vspace{1em}
 Describe what is meant by clotting activity versus proteolytic activity of a coagulant. What is the optimal proteolytic activity of a coagulant?
 
+\subsubsection*{Answer}
+
 \subsection*{2.3}
 \vspace{1em}
 How could the different activity of coagulants during cheese ripening be investigated?
+
+\subsubsection*{Answer}
 
 
 \newpage
@@ -61,9 +164,13 @@ The cheese yield varies due to a number of cheese making parameters, and it vari
 \vspace{1em}
 Describe which major milk components of the cheese milk that are retained, and which are not retained in the cheese, and describe why they are retained or not retained. Elaborate on the difference between Cheese Yield and Moisture Adjusted Cheese Yield (MACY).
 
+\subsubsection*{Answer}
+
 \subsection*{3.2}
 \vspace{1em}
 Describe how milk quality parameters can affect cheese yield. Describe industrial methods/ingredients which may be used to increase cheese yield.
+
+\subsubsection*{Answer}
 
 
 \newpage
@@ -74,13 +181,19 @@ During the first day(s), pH in cheese decreases to a minimum and then it increas
 \vspace{1em}
 Describe how different pH minima (the lowest pH obtained during cheese making) may be obtained, and give examples on cheese varieties with low, medium and high minimum-pH.
 
+\subsubsection*{Answer}
+
 \subsection*{4.2}
 \vspace{1em}
 Give examples on cheese varieties with low, medium and high final pH (pH of the ripened cheese), respectively, and describe which microbial/enzymatic activities that are involved.
 
+\subsubsection*{Answer}
+
 \subsection*{4.3}
 \vspace{1em}
 Differences in pH between the interior and the surface of cheeses are most pronounced in cheeses with surface ripening. Mention two different cheese varieties with different kind of surface ripening. Explain how pH gradients develop during ripening and how they influence ripening using one of the cheese varieties as an example.
+
+\subsubsection*{Answer}
 
 
 \newpage
@@ -88,13 +201,19 @@ Differences in pH between the interior and the surface of cheeses are most prono
 \subsection*{5.1}
 Gas may be produced from the metabolism of lactose and citrate. Which are the main microorganisms involved in this metabolism, and in which type of cheeses is this relevant?
 
+\subsubsection*{Answer}
+
 \subsection*{5.2}
 \vspace{1em}
 Gas production in cheese is not always desirable and may be considered as a serious defect. Mention three different types of gas producing reactions (substrate and the organisms involved) in which undesired gas production may occur. What measures are available to the cheese producer to control undesired gas production in cheese?
 
+\subsubsection*{Answer}
+
 \subsection*{5.3}
 \vspace{1em}
 In Swiss cheese, eye formation is an important cheese quality parameter. What factors (microbial and physio-chemical) are necessary to ensure that satisfactory eye formation develops?
+
+\subsubsection*{Answer}
 
 
 \newpage
@@ -102,17 +221,25 @@ In Swiss cheese, eye formation is an important cheese quality parameter. What fa
 \subsection*{6.1}
 Proteolysis is a fundamental process in cheese ripening. List enzymes that hydrolyse peptide bonds in intact casein molecules in rennet coagulated semi-hard cheeses, describe the specificity of these enzymes and give the first peptides that are produced.
 
+\subsubsection*{Answer}
+
 \subsection*{6.2}
 \vspace{1em}
 Explain how the first peptide released from $\alpha_{S1}$-casein by chymosin in cheese ($\alpha_{S1}$-casein (f1-23)), may be further hydrolysed all the way to amino acids, and mention which enzymes that are involved and what the origin of these enzymes may be.
+
+\subsubsection*{Answer}
 
 \subsection*{6.3}
 \vspace{1em}
 Give examples of two cheese types with different primary proteolysis (first attack on intact casein) and explain how the differences are related to cheese manufacture. Elaborate on suitable laboratory methods for measuring proteolysis in cheese.
 
+\subsubsection*{Answer}
+
 \subsection*{6.4}
 \vspace{1em}
 What approaches can be used to accelerate proteolysis and what are the advantages/disadvantages of each approach?
+
+\subsubsection*{Answer}
 
 
 \newpage
@@ -120,9 +247,13 @@ What approaches can be used to accelerate proteolysis and what are the advantage
 \subsection*{7.1}
 Amino acids are released from casein derived peptides in cheese during ripening and used to different extents by different microorganisms. Describe the enzymes that are directly involved in amino acid release incl. their name, specificity and origin.
 
+\subsubsection*{Answer}
+
 \subsection*{7.2}
 \vspace{1em}
 Amino acids may be catabolized to aroma compounds in cheese. What are the main pathways (and the enzymes involved) in the catabolism of amino acids?
+
+\subsubsection*{Answer}
 
 \subsection*{7.3}
 \vspace{1em}
@@ -161,6 +292,8 @@ respectively?
 \vspace{1em}
 Which analytical method can be used for identification of aroma compounds in cheese?
 
+\subsubsection*{Answer}
+
 
 \newpage
 \section{Importance of Milk Fat in Cheese Flavour}
@@ -170,14 +303,20 @@ Low-fat cheese commonly lacks the complex and balanced flavour of normal-fat che
 \vspace{1em}
 Describe three different roles that milk fat may have in cheese flavour and describe how the off-flavour bitterness is related to fat content in cheese.
 
+\subsubsection*{Answer}
+
 \subsection*{8.2}
 \vspace{1em}
 During ripening, fat is degraded to different extent in different cheese varieties from less than 1\% to about 10\% or more. Which lipolytic enzymes are involved in different kinds of cheeses, and where do they origin from? Which kind of aroma compounds may be produced from lipolysis and further catabolism of the fatty acids released, and what flavour notes do each of these aroma compounds introduce.
+
+\subsubsection*{Answer}
 
 \subsection*{8.3}
 \vspace{1em}
 Give examples of compounds from milk fat catabolism that contribute to the characteristic flavour of the two cheeses, Parmesan and Blue cheese.
 How can lipolysis be enhanced in cheese during ripening?
+
+\subsubsection*{Answer}
 
 
 \newpage
@@ -188,10 +327,14 @@ During acidification of milk, e.g. during fermentation using a standard culture 
 \vspace{1em}
 Describe the changes occurring in the casein micelle as a result of acidification.
 
+\subsubsection*{Answer}
+
 \subsection*{9.2}
 \vspace{1em}
 What are the main factors affecting structure formation in fermented milk products, and how can these be used to control the structural properties of the final product?
 How can you measure the structure formation?
+
+\subsubsection*{Answer}
 
 
 \newpage
@@ -202,13 +345,19 @@ A number of basic processing steps are included in most production processes for
 \vspace{1em}
 Present an outline of a standard production process for yoghurt manufacture (set or stirred), including a short description of the aim and outcome of the selected parameters for each processing step.
 
+\subsubsection*{Answer}
+
 \subsection*{10.2}
 \vspace{1em}
 How can concentration for production of fermented milk products like Greek yoghurt, ymer and skyr be obtained? Both traditional methods and modern technologies should be addressed.
 
+\subsubsection*{Answer}
+
 \subsection*{10.3}
 \vspace{1em}
 Describe which molecules (apart from lactic acid) that are largely responsible for the flavour of plain yoghurt and describe how they are formed.
+
+\subsubsection*{Answer}
 
 
 
